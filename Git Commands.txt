@@ -1,0 +1,34 @@
+- mkdir project = Make a directory named "project"
+- touch names.txt = Create a file; Linux, MacOS, Git Bash
+- new-item names.txt = Create a file; Windows
+- rm names.txt = Remove file/folder
+- rm -rf names.txt = Remove file or folder, recursively, and forcefully, without confirmation
+
+- git config --global init.defaultBranch main = Sets "main" as the default branch name for all new repos
+- git init = Initialize Git, i.e., start tracking changes; creates a branch named "master" (unless changed) if not specified
+- git init -b main = Creates a new Git repo with a branch named "main"
+- git status = Check status of changes
+- git add . = Add changes to staging area (Recognize changes before committing them) (. = all)
+- git commit -m "description" = Commit changes to branch, and record it along with the description (m = message)
+- git restore --staged . = Remove all recognized changes of the files from stage (Reversal of git add .)
+- git log = See history of commits
+- git reset ce6208cf36299af0beacbabe3963bc192f975f20 = Go back to the commit with this hash code
+- git stash = Stash these changes at the back, until required
+- git stash pop = Get those stashed changes and files onto the front
+- git stash clear = Get rid of the stash
+- git remote add origin https://github.com/Bela-Jash/Kunal-Kushwawa-Git-Tutorial = Associate this project with this remote repository, and give the link a henceforward shorthand notation of "origin"
+(Convention: origin = own personal version, upstream = original forked-from version)
+- git remote = List all remote repositories associated with this project
+- git remote -v = List all remote repositories and the respective links associated with this project (v = verbose, i.e., show more details)
+- git clone https://github.com/Bela-Jash/commclassroomOP.git = Clones project into current directory
+- git push origin main = Push and upload all changes to origin link and main branch
+- git branch bela-jash = Create a branch named "bela-jash"
+- git checkout bela-jash = Make head point to the bela-jash branch (Change active branch to bela-jash)
+- git fetch --all --prune = Fetch all changes from the current and possibly upstream branches
+- git pull origin main
+- git rebase -i 69bff533282f8cc1137708e5cb438b4317b7b005 = Option to pick or squash (merge) commits
+- git remote rename <old_alias> <new_alias> = Rename alias of the remote repository
+- git pull origin main --allow-unrelated-histories = Pull the main branch from the remote repository, and bypass unrelated-histories restriction
+
+- vi names.txt = Open the file in VI Editor
+- cat names.txt = (Concatenate) Display text from file in VI Editor
